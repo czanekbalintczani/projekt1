@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #333333, #777777);
+    padding: 10px 50px; /* Állítsd be a szükséges távolságot */
+}
+
+.social-media-links a {
+    color: white; /* A közösségi média ikonok színe */
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.logo-container img {
+    height: 50px; /* Állítsd be a logó méretét */
+}
+
+.site-navigation ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation ul li {
+    margin-left: 20px;
+}
+
+.site-navigation ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
