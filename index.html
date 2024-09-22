@@ -4,27 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fejléc Példa</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+
+    </style>
 </head>
 <body>
-    <header class="site-header">
-        <div class="social-media-links">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-        </div>
-        <div class="logo-container">
-            <img src="logo.png" alt="Bulls Burgers Logo"> <!-- Cseréld le a 'logo.png'-t a saját logódra -->
-        </div>
-        <nav class="site-navigation">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT US</a></li>
-                <li><a href="#">MENU</a></li>
-                <li><a href="#">STORY</a></li>
-                <li><a href="#">CONTACT</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="navbar-left">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Kezdőlap</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Rólunk</a>
+                </li>
             </ul>
-        </nav>
-    </header>
-SZia Milán
+        </div>
+        <a class="navbar-brand" href="#"><img src="img/logo.jpg" alt="" id="logo"></a>
+        <div class="navbar-right">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Rendezvények</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Elérhetőség</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
