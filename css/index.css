@@ -5,8 +5,8 @@
 
 .navbar {
     justify-content: space-between;
-    background-color: #343a40; /* Háttérszín */
-    color: white; /* Betűszín */
+    background-color: #808080; /* Háttérszín */
+    color: white; /* Betűszín fehér, hogy olvasható legyen */
 }
 
 .navbar-nav {
@@ -14,7 +14,7 @@
 }
 
 .nav-item {
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 .navbar-brand {
@@ -29,7 +29,7 @@
 }
 
 .navbar a, .nav-item, .navbar-brand, .navbar-left, .navbar-right {
-    color: white; /* Betűszín */
+    color: white; /* Betűszín fehér, hogy kiemelkedjen a #808080 háttérből */
 }
 
 .navbar a.clicked {
@@ -42,6 +42,8 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%; /* Teljes ablakmagasság */
+    background-color: #000000dd;
+    color: #808080;
 }
 
 body {
@@ -57,7 +59,7 @@ body {
 .footer {
     background-color: #343a40;
     color: white;
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
     margin-top: auto; /* Footer automatikusan a képernyő aljára kerül */
 }
@@ -69,4 +71,27 @@ body {
 
 .footer a:hover {
     color: #007bff;
+}
+
+/* Nav-link styling */
+.nav-link {
+    color: #000000; /* Fekete */
+    text-decoration: none; /* Alapból nincs aláhúzás */
+    font-weight: normal; /* Normál súly */
+}
+
+/* Aktív oldal esetén: félkövér és piros
+.aktiv {
+    color: #FF0000; /* Piros */
+
+/* Ha az egér a link fölé kerül: piros, félkövér és aláhúzott */
+.nav-link:hover {
+    color: #FF0000; /* Piros */
+    font-weight: bold; /* Félkövér */
+    text-decoration: underline; /* Aláhúzás */
+}
+
+#aktiv{
+    color: #FF0000;
+    font-weight: bold;
 }
