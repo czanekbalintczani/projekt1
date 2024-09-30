@@ -1,20 +1,72 @@
-#logo{height: 100px;
-    margin-top: 40px;}
-    .navbar {
-        justify-content: space-between;
-    }
-    .navbar-nav {
-        flex-direction: row;
-    }
-    .nav-item {
-        margin: 0 10px;
-    }
-    .navbar-brand {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .navbar-left, .navbar-right {
-        display: flex;
-        align-items: center;
-    }
+#logo {
+    height: 100px;
+    margin-top: 40px;
+}
+
+.navbar {
+    justify-content: space-between;
+    background-color: #343a40; /* Háttérszín */
+    color: white; /* Betűszín */
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar-left, .navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a, .nav-item, .navbar-brand, .navbar-left, .navbar-right {
+    color: white; /* Betűszín */
+}
+
+.navbar a.clicked {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Sticky Footer CSS */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Teljes ablakmagasság */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Legalább teljes képernyőmagasság */
+}
+
+.content {
+    flex: 1; /* Kitölti a rendelkezésre álló helyet */
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto; /* Footer automatikusan a képernyő aljára kerül */
+}
+
+.footer a {
+    color: white;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    color: #007bff;
+}

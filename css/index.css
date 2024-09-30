@@ -32,17 +32,41 @@
     color: white; /* Betűszín */
 }
 
+.navbar a.clicked {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Sticky Footer CSS */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Teljes ablakmagasság */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Legalább teljes képernyőmagasság */
+}
+
+.content {
+    flex: 1; /* Kitölti a rendelkezésre álló helyet */
+}
 
 .footer {
     background-color: #343a40;
     color: white;
     padding: 20px 0;
     text-align: center;
+    margin-top: auto; /* Footer automatikusan a képernyő aljára kerül */
 }
+
 .footer a {
     color: white;
     margin: 0 10px;
 }
+
 .footer a:hover {
     color: #007bff;
 }
