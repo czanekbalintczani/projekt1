@@ -32,9 +32,10 @@
     color: white; /* Betűszín */
 }
 
-.navbar a.clicked {
-    font-weight: bold;
-    text-decoration: underline;
+/* Aktív oldal esetén: piros és félkövér */
+.nav-item.active .nav-link {
+    color: #FF0000; /* Piros */
+    font-weight: bold; /* Félkövér */
 }
 
 /* Sticky Footer CSS */
@@ -57,7 +58,7 @@ body {
 .footer {
     background-color: #343a40;
     color: white;
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
     margin-top: auto; /* Footer automatikusan a képernyő aljára kerül */
 }
@@ -69,4 +70,24 @@ body {
 
 .footer a:hover {
     color: #007bff;
+}
+
+/* Nav-link styling */
+.nav-link {
+    color: #000000; /* Fekete */
+    text-decoration: none; /* Alapból nincs aláhúzás */
+    font-weight: normal; /* Normál súly */
+}
+
+/* Ha az egér a link fölé kerül: piros, félkövér és aláhúzott */
+.nav-link:hover {
+    color: #FF0000; /* Piros */
+    font-weight: bold; /* Félkövér */
+    text-decoration: underline; /* Aláhúzás */
+}
+
+/* Aktív elem az aktív oldalhoz */
+#aktiv {
+    color: #FF0000; /* Piros */
+    font-weight: bold; /* Félkövér */
 }
