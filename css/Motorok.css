@@ -90,3 +90,16 @@ body {
     color: #FF0000;
     font-weight: bold;
 }
+
+img{
+    height: 200px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover(){
+    color: #007bff;
+}
