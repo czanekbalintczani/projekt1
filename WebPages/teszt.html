@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balaton felvidéki mbk</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            max-width: 150px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .hero {
+            background: url('https://example.com/hero-image.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3em;
+            color: #ffffff;
+        }
+        .content {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            color: #ff4500;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .slides {
+            display: none;
+        }
+        .slides img {
+            width: 100%;
+        }
+        .text {
+            color: #ffffff;
+            font-size: 1.2em;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+        footer {
+            background-color: #1f1f1f;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://example.com/logo.png" alt="Balaton felvidéki mbk Logo">
+    </header>
+    <nav>
+        <a href="#motorosok">Motorosok</a>
+        <a href="#muhely">Műhely</a>
+        <a href="#galeria">Galéria</a>
+        <a href="#kapcsolat">Kapcsolat</a>
+    </nav>
+    <div class="hero">
+        <h1>Üdvözlünk a Balaton felvidéki Motoros Klubban!</h1>
+    </div>
+    <div class="content">
+        <div class="section" id="motorosok">
+            <h2>Motorosok</h2>
+            <p>Ismerd meg klubtagjainkat és történeteiket. Mindenki egyedi, de a motorozás iránti szenvedélyünk közös.</p>
+        </div>
+        <div class="section" id="muhely">
+            <h2>Műhely</h2>
+            <p>Látogass el műhelyünkbe, ahol tapasztalt szerelőink segítenek karbantartani és fejleszteni motorodat.</p>
+        </div>
+        <div class="section gallery" id="galeria">
+            <h2>Galéria</h2>
+            <img src="https://example.com/gallery1.jpg" alt="Motoros túra">
+            <img src="https://example.com/gallery2.jpg" alt="Műhely munka">
+        </div>
+    </div>
+    <div class="slideshow-container">
+        <div class="slides">
+            <img src="https://example.com/slideshow1.jpg" alt="Slideshow Image 1">
+            <div class="text">Minta szöveg 1</div>
+        </div>
+        <div class="slides">
+            <img src="https://example.com/slideshow2.jpg" alt="Slideshow Image 2">
+            <div class="text">Minta szöveg 2</div>
+        </div>
+        <div class="slides">
+            <img src="https://example.com/slideshow3.jpg" alt="Slideshow Image 3">
+            <div class="text">Minta szöveg 3</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <footer>
+        <p>Kapcsolat: info@balatonmbk.hu | Kövess minket a közösségi médiában!</p>
+    </footer>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+    </script>
+</body>
+</html>
