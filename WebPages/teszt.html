@@ -63,6 +63,7 @@
         }
         .slides {
             display: none;
+            transition: opacity 1.5s ease-in-out;
         }
         .slides img {
             width: 100%;
@@ -134,16 +135,12 @@
     </div>
     <div class="slideshow-container">
         <div class="slides">
-            <img src="https://example.com/slideshow1.jpg" alt="Slideshow Image 1">
-            <div class="text">Minta szöveg 1</div>
+            <img src="/Images/Qianjiang-QJMotor-Flash-600-V4-09-2023--jsonLd1x1-d10d0fbc-2038906.avif" height="500" width="1000" alt="Slideshow Image 1">        </div>
+        <div class="slides">
+            <img src="/Images/fityisz.jpg" height="500" width="1000" alt="Slideshow Image 1">            <div class="text">Minta szöveg 2</div>
         </div>
         <div class="slides">
-            <img src="https://example.com/slideshow2.jpg" alt="Slideshow Image 2">
-            <div class="text">Minta szöveg 2</div>
-        </div>
-        <div class="slides">
-            <img src="https://example.com/slideshow3.jpg" alt="Slideshow Image 3">
-            <div class="text">Minta szöveg 3</div>
+            <img src="/Images/mbp-c1002v.png" height="500" width="1000" alt="Slideshow Image 1">            <div class="text">Minta szöveg 3</div>
         </div>
         <a class="prev" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)">❯</a>
@@ -163,7 +160,7 @@
             slideIndex++;
             if (slideIndex > slides.length) {slideIndex = 1}
             slides[slideIndex-1].style.display = "block";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
+            setTimeout(showSlides, 4000); // Change image every 4 seconds
         }
 
         function plusSlides(n) {
