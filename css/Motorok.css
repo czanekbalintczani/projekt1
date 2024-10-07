@@ -103,3 +103,6 @@ a{
 a:hover(){
     color: #007bff;
 }
+a:link{
+    color: #ff4500;
+}
