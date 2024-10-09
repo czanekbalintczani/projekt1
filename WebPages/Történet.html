@@ -29,6 +29,7 @@
         justify-content: center;
         background-color: #333;
         padding: 10px;
+        font-size: 18pt;
     }
     nav a {
         color: #ffffff;
@@ -129,6 +130,13 @@
         
         text-align: center;
     }
+    #mbk2{
+        text-decoration: none;
+        color: #ff4500;
+    }
+    .kozepre a{
+        text-decoration: none;
+    }
 </style>
 <body>
     <header>
@@ -145,30 +153,33 @@
     <div class="row justify-content-center">
         <div class="col-lg-10">
             <div class="form-container">
-                <div class="row kozepre">
-                    <div class="col-lg-3"><a href="#ala">Rólunk</a></div>
-                    <div class="col-lg-3"><a href="#val">Alapítás</a></div>
-                    <div class="col-lg-3"><a href="#ese">Küldetésünk</a></div>
-                    <div class="col-lg-3"><a href="#tag">Események</a></div>
+                <div class="row kozepre" >
+                    <div class="col-lg-3" ><a href="#ala"><span id="mbk2">Rólunk</span></a></div>
+                    <div class="col-lg-3"><a href="#val"><span id="mbk2">Alapítás</span></a></div>
+                    <div class="col-lg-3"><a href="#ese"><span id="mbk2">Küldetésünk</span></a></div>
+                    <div class="col-lg-3"><a href="#tag"><span id="mbk2">Események</span></a></div>
                 </div>
                 <br>
-                <img id="img2" src="../Images/450077133_455075080829898_1686046990960421400_n.jpg" alt="Hiba.">
-                <br>
-                <h1 class="mbk" id="ese">Rólunk:</h1>
-                <p>Üdvözlünk a Balaton-Felvidéki MBK hivatalos weboldalán! Csapatunk 2020 augusztusában alakult, amikor nyolc lelkes motoros úgy döntött, hogy egyesítik szenvedélyüket és közös túrákat szerveznek a Balaton-felvidék gyönyörű tájain. Azóta folyamatosan bővültünk, és jelenleg 15 taggal büszkélkedhetünk.</p>
+                <div class="row">
+                    <div class="col-lg-5">
+                        <h1 class="mbk" id="ese">Rólunk:</h1>
+                        <p>Üdvözlünk a Balaton-Felvidéki MBK hivatalos weboldalán! Csapatunk 2020 augusztusában alakult, amikor nyolc lelkes motoros úgy döntött, hogy egyesítik szenvedélyüket és közös túrákat szerveznek a Balaton-felvidék gyönyörű tájain. Azóta folyamatosan bővültünk, és jelenleg 15 taggal büszkélkedhetünk.</p>
+                    </div>
+                    <div class="col-lg-7 "><img src="/Images/450077133_455075080829898_1686046990960421400_n.jpg" alt="" height="400" width="800" class="img2"></div>
+                </div>
                 <h1 class="mbk" id="ala">Alapítás:</h1>
                 <p>A Balaton-felvidéki MBK története egy forró nyári napon kezdődött, amikor nyolc barát egy közös motoros túra során elhatározta, hogy hivatalos klubot alapítanak. Az ötlet egy tóparti kávézóban született meg, ahol a barátok a naplementét nézve beszélgettek a jövőről és a motorozás iránti szenvedélyükről. </p> <p> Az alapító tagok között volt egy veterán motoros, egy fiatal mérnök, egy orvos és egy tanár is, akik mindannyian osztoztak a szabadság és a kaland iránti vágyban.</p>
                 <br>
                 <div class="row">
+                    <div class="col-lg-7">
+                        <img src="/Images/gyerekamotoron.jpg" alt="" height="400" width="800">
+                    </div>    
                     <div class="col-lg-5">
                         <h1 class="mbk" id="val">Küldetésünk:</h1>
                         <p>A Balaton-felvidéki MBK célja, hogy összekösse a motorozás szerelmeseit, és közös élményeket nyújtson számukra. </p>
                         <p>Nyílt és meghívásos alapú motoros túrákat szervezünk, ahol mindenkit szívesen látunk, aki osztozik a szenvedélyünkben. Időnként nagyobb csapatokhoz is csatlakozunk, hogy még több motorossal oszthassuk meg az utazás örömét.</p>
                     
                     </div>
-                <div class="col-lg-7">
-                    <img src="/Images/" alt="">
-                </div>    
                 </div>
                 <br>
                 <br>
@@ -185,7 +196,7 @@
 </div>
 
 <footer>
-    <p>Kapcsolat: <a href="mailto:info@balatonmbk.hu"><span id="mbk">info@balatonmbk.hu</span></a> | Kövess <span id="mbk">minket</span> a <a href="https://www.facebook.com/motorozzvelem">közösségi médiában</a>!</p>
+    <p style="margin: 0%;">Kapcsolat: <a style="text-decoration: none" href="mailto:info@balatonmbk.hu"><span id="mbk">info@balatonmbk.hu</span></a> / <a style="color: #ff4500; text-decoration: none;" href="/WebPages/Üzenet.html">Üzenet</a> | Kövess minket a <a style="color: #ff4500; text-decoration: none;" href="https://www.facebook.com/motorozzvelem">közösségi médiában</a>!</p>
 </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>

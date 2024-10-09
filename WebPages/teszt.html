@@ -11,6 +11,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            font-size: 18pt;
         }
         header {
             background-color: #1f1f1f;
@@ -25,6 +26,7 @@
             justify-content: center;
             background-color: #333;
             padding: 10px;
+            font-size: 18pt;
         }
         nav a {
             color: #ffffff;
@@ -72,13 +74,15 @@
             width: 100%;
         }
         .text {
-            color: #ffffff;
-            font-size: 1.2em;
+            color: #ff4500;
+            background-color: #121212;
+            font-size: 25pt;
             padding: 8px 12px;
             position: absolute;
             bottom: 8px;
             width: 100%;
             text-align: center;
+            font-weight: bold;
         }
         .prev, .next {
             cursor: pointer;
@@ -114,10 +118,14 @@
             color: white;
             background-color: #ff4500;
             border: 2px solid black;
-            font-size: 20px;
+            font-size: 20pt;
             font-weight: bold;
-            border-radius: 5%;
+            border-radius: 7px;
         }
+        .szoveg{
+            font-size: 25pt;
+        }
+        #meretuj{font-size: 45pt;}
     </style>
 </head>
 <body>
@@ -131,40 +139,41 @@
         <a href="/WebPages/Történet.html">Történet</a>
     </nav>
     <div class="hero">
-        <h1>Üdvözlünk a <span id="mbk">Balaton-Felvidéki Motoros Baráti Kör</span> oldalán!</h1>
+        <h2 id="meretuj">Üdvözlünk a <span id="mbk">Balaton-Felvidéki Motoros Baráti Kör</span> oldalán!</h2>
     </div>
     <div class="content">
         <div class="section" id="motorosok">
+            <p class="szoveg">Ismerd meg klubtagjainkat és történeteiket. Mindenki egyedi, de a motorozás iránti szenvedélyünk közös.</p>
             <h2><a href="/WebPages/Történet.html"><button type="button">Történet</button></a></h2>
-            <p>Ismerd meg klubtagjainkat és történeteiket. Mindenki egyedi, de a motorozás iránti szenvedélyünk közös.</p>
         </div>
         <div class="section" id="muhely">
+            <p class="szoveg">Ha szeretnél <span id="mbk">csapatunkhoz</span> tartozni, ne habozz, a gombra kattintva írhatsz nekünk!</p>
             <h2><a href="/WebPages/Üzenet.html"><button type="button">Írj nekünk!</button></a></h2>
-            <p>Ha szeretnél <span id="mbk">csapatunkhoz</span> tartozni, ne habozz, a gombra kattintva írhatsz nekünk!</p>
         </div>
         <div class="section gallery" id="galeria">
+            <p class="szoveg">Érdekel mi történik velünk egy-egy gurulgatás alkalmával? Esetleg ott voltál és szeretnéd újra átélni a pillanatot? Folyamatosan frissülő képgalériánkkal megteheted!</p>
             <h2><a href="/WebPages/Galéria.html" ><button type="button">Galéria</button></a></h2>
-            <p>Érdekel mi történik velünk egy-egy gurulgatás alkalmával? Esetleg ott voltál és szeretnéd újra átélni a pillanatot? Folyamatosan frissülő képgalériánkkal megteheted!</p>
         </div>
         <div class="section" id="motorok"></div>
-            <h2><a href="/WebPages/Motorok.html"><button type="button">Motorjaink</button></a></h2>
-            <p>Érdekelm hogy a <span id="mbk">csapatunk</span> mivel rója az utakat? Lesd meg!</p>
+        <p class="szoveg">Érdekel, hogy a <span id="mbk">csapatunk</span> mivel rója az utakat? Lesd meg!</p>
+        <h2><a href="/WebPages/Motorok.html"><button type="button">Motorjaink</button></a></h2>
         </div>
     </div>
     <div class="slideshow-container">
         <div class="slides">
-            <img src="/Images/Qianjiang-QJMotor-Flash-600-V4-09-2023--jsonLd1x1-d10d0fbc-2038906.avif" height="500" width="1000" alt="Slideshow Image 1">        </div>
+            <img src="/Images/mbmotorosfeszt.jpg" height="500" width="1000" alt="Slideshow Image 1">        
+            <div class="text">Egy rövid feltöltődés hétvégén!</div></div>
         <div class="slides">
-            <img src="/Images/fityisz.jpg" height="500" width="1000" alt="Slideshow Image 1">            <div class="text">Minta szöveg 2</div>
+            <img src="/Images/gyerekamotoron.jpg" height="500" width="1000" alt="Slideshow Image 1">            <div class="text">Az első motoros fesztiválon készült kép</div>
         </div>
         <div class="slides">
-            <img src="/Images/mbp-c1002v.png" height="500" width="1000" alt="Slideshow Image 1">            <div class="text">Minta szöveg 3</div>
+            <img src="/Images/ujtag.jpg" height="500" width="1000" alt="Slideshow Image 1">            <div class="text">Csabi csatlakozott hozzánk! Üdv a klubban!</div>
         </div>
         <a class="prev" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)">❯</a>
     </div>
     <footer>
-        <p>Kapcsolat: <a href="mailto:info@balatonmbk.hu"><span id="mbk">info@balatonmbk.hu</span></a> | Kövess <span id="mbk">minket</span> a <a href="https://www.facebook.com/motorozzvelem">közösségi médiában</a>!</p>
+        <p style="margin: 0%;">Kapcsolat: <a style="text-decoration: none" href="mailto:info@balatonmbk.hu"><span id="mbk">info@balatonmbk.hu</span></a> / <a style="color: #ff4500; text-decoration: none;" href="/WebPages/Üzenet.html">Üzenet</a> | Kövess minket a <a style="color: #ff4500; text-decoration: none;" href="https://www.facebook.com/motorozzvelem">közösségi médiában</a>!</p>
     </footer>
     <script>
         let slideIndex = 0;
