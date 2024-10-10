@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Történet</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/Történet.css">
+    <link rel="shortcut icon" href="../Images/logouj.ico" type="image/x-icon">
+
 </head>
 <style>
     body {
@@ -16,29 +19,40 @@
         padding: 0;
         font-size: 18pt;
     }
+
     header {
         background-color: #1f1f1f;
         padding: 20px;
         text-align: center;
     }
+
     header img {
         max-width: 150px;
     }
-    nav {
+
+    .nav {
         display: flex;
         justify-content: center;
         background-color: #333;
         padding: 10px;
         font-size: 18pt;
+        text-align: center;
     }
-    nav a {
+
+    .nav a {
         color: #ffffff;
         text-decoration: none;
         margin: 0 15px;
     }
-    nav a:hover{
+
+    .nav a:hover {
         color: #ff4500
     }
+
+    .nav-active {
+        color: #ff4500;
+    }
+
     .hero {
         background: url('https://example.com/hero-image.jpg') no-repeat center center/cover;
         height: 400px;
@@ -47,35 +61,44 @@
         align-items: center;
         text-align: center;
     }
+
     .hero h1 {
         font-size: 3em;
         color: #ffffff;
     }
+
     .content {
         padding: 20px;
     }
+
     .section {
         margin-bottom: 40px;
     }
+
     .section h2 {
         color: #ff4500;
     }
+
     .gallery img {
         width: 100%;
         height: auto;
     }
+
     .slideshow-container {
         position: relative;
         max-width: 1000px;
         margin: auto;
     }
+
     .slides {
         display: none;
         transition: opacity 1.5s ease-in-out;
     }
+
     .slides img {
         width: 100%;
     }
+
     .text {
         color: #ffffff;
         font-size: 1.2em;
@@ -85,7 +108,9 @@
         width: 100%;
         text-align: center;
     }
-    .prev, .next {
+
+    .prev,
+    .next {
         cursor: pointer;
         position: absolute;
         top: 50%;
@@ -99,25 +124,32 @@
         border-radius: 0 3px 3px 0;
         user-select: none;
     }
+
     .next {
         right: 0;
         border-radius: 3px 0 0 3px;
     }
-    .prev:hover, .next:hover {
-        background-color: rgba(0,0,0,0.8);
+
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
     }
+
     footer {
         background-color: #1f1f1f;
         text-align: center;
         padding: 20px;
     }
-    #mbk{
+
+    #mbk {
         color: #ff4500
     }
-    .mbk{
+
+    .mbk {
         color: #ff4500;
     }
-    button{
+
+    button {
         text-align: center;
         color: white;
         background-color: #ff4500;
@@ -126,80 +158,106 @@
         font-weight: bold;
         border-radius: 5%;
     }
-    .kozepre{
-        
+
+    .kozepre {
+
         text-align: center;
     }
-    #mbk2{
+
+    #mbk2 {
         text-decoration: none;
         color: #ff4500;
     }
-    .kozepre a{
+
+    .kozepre a {
         text-decoration: none;
     }
 </style>
+
 <body>
     <header>
-        <a href="/WebPages/teszt.html"><img src="/Images/logouj.png" alt="Balaton felvidéki mbk Logo"></a>
+        <a href="../WebPages/teszt.html"><img src="../Images/logouj.png" alt="Balaton felvidéki mbk Logo"></a>
     </header>
-    <nav>
-        <a href="/WebPages/Motorok.html">Motorok</a>
-        <a href="/WebPages/Üzenet.html">Üzenet</a>
-        <a href="/WebPages/Galéria.html">Galéria</a>
-        <a href="/WebPages/Történet.html">Történet</a>
-    </nav>
-    
-<div>
-    <div class="row justify-content-center">
-        <div class="col-lg-10">
-            <div class="form-container">
-                <div class="row kozepre" >
-                    <div class="col-lg-3" ><a href="#ala"><span id="mbk2">Rólunk</span></a></div>
-                    <div class="col-lg-3"><a href="#val"><span id="mbk2">Alapítás</span></a></div>
-                    <div class="col-lg-3"><a href="#ese"><span id="mbk2">Küldetésünk</span></a></div>
-                    <div class="col-lg-3"><a href="#tag"><span id="mbk2">Események</span></a></div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-lg-5">
-                        <h1 class="mbk" id="ese">Rólunk:</h1>
-                        <p>Üdvözlünk a Balaton-Felvidéki MBK hivatalos weboldalán! Csapatunk 2020 augusztusában alakult, amikor nyolc lelkes motoros úgy döntött, hogy egyesítik szenvedélyüket és közös túrákat szerveznek a Balaton-felvidék gyönyörű tájain. Azóta folyamatosan bővültünk, és jelenleg 15 taggal büszkélkedhetünk.</p>
+    <div class="row">
+        <div class="nav">
+            <div class="col-lg-3"><a href="../WebPages/Motorok.html">Motorok</a></div>
+            <div class="col-lg-3"><a href="../WebPages/Üzenet.html">Üzenet</a></div>
+            <div class="col-lg-3"><a href="../WebPages/Galéria.html">Galéria</a></div>
+            <div class="col-lg-3"><a href="../WebPages/Történet.html"><span class="nav-active">Történet</span></a></div>
+        </div>
+    </div>
+
+    <div>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="form-container">
+                    <div class="row kozepre">
+                        <div class="col-lg-3"><a href="#rol"><span id="mbk2">Rólunk</span></a></div>
+                        <div class="col-lg-3"><a href="#ala"><span id="mbk2">Alapítás</span></a></div>
+                        <div class="col-lg-3"><a href="#kuld"><span id="mbk2">Küldetésünk</span></a></div>
+                        <div class="col-lg-3"><a href="#tag"><span id="mbk2">Események</span></a></div>
                     </div>
-                    <div class="col-lg-7 "><img src="/Images/450077133_455075080829898_1686046990960421400_n.jpg" alt="" height="400" width="800" class="img2"></div>
-                </div>
-                <h1 class="mbk" id="ala">Alapítás:</h1>
-                <p>A Balaton-felvidéki MBK története egy forró nyári napon kezdődött, amikor nyolc barát egy közös motoros túra során elhatározta, hogy hivatalos klubot alapítanak. Az ötlet egy tóparti kávézóban született meg, ahol a barátok a naplementét nézve beszélgettek a jövőről és a motorozás iránti szenvedélyükről. </p> <p> Az alapító tagok között volt egy veterán motoros, egy fiatal mérnök, egy orvos és egy tanár is, akik mindannyian osztoztak a szabadság és a kaland iránti vágyban.</p>
-                <br>
-                <div class="row">
-                    <div class="col-lg-7">
-                        <img src="/Images/gyerekamotoron.jpg" alt="" height="400" width="800">
-                    </div>    
-                    <div class="col-lg-5">
-                        <h1 class="mbk" id="val">Küldetésünk:</h1>
-                        <p>A Balaton-felvidéki MBK célja, hogy összekösse a motorozás szerelmeseit, és közös élményeket nyújtson számukra. </p>
-                        <p>Nyílt és meghívásos alapú motoros túrákat szervezünk, ahol mindenkit szívesen látunk, aki osztozik a szenvedélyünkben. Időnként nagyobb csapatokhoz is csatlakozunk, hogy még több motorossal oszthassuk meg az utazás örömét.</p>
-                    
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <h1 class="mbk" id="rol">Rólunk:</h1>
+                            <p>Üdvözlünk a Balaton-Felvidéki MBK hivatalos weboldalán! Csapatunk 2020 augusztusában
+                                alakult, amikor nyolc lelkes motoros úgy döntött, hogy egyesítik szenvedélyüket és közös
+                                túrákat szerveznek a Balaton-felvidék gyönyörű tájain. Azóta folyamatosan bővültünk, és
+                                jelenleg 15 taggal büszkélkedhetünk.</p>
+                        </div>
+                        <div class="col-lg-7 "><img src="../Images/450077133_455075080829898_1686046990960421400_n.jpg"
+                                alt="" height="400" width="800" class="img2"></div>
                     </div>
+                    <h1 class="mbk" id="ala">Alapítás:</h1>
+                    <p>A Balaton-felvidéki MBK története egy forró nyári napon kezdődött, amikor nyolc barát egy közös
+                        motoros túra során elhatározta, hogy hivatalos klubot alapítanak. Az ötlet egy tóparti kávézóban
+                        született meg, ahol a barátok a naplementét nézve beszélgettek a jövőről és a motorozás iránti
+                        szenvedélyükről. </p>
+                    <p> Az alapító tagok között volt egy veterán motoros, egy fiatal mérnök, egy orvos és egy tanár is,
+                        akik mindannyian osztoztak a szabadság és a kaland iránti vágyban.</p>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <img src="../Images/gyerekamotoron.jpg" alt="" height="400" width="800">
+                        </div>
+                        <div class="col-lg-5">
+                            <h1 class="mbk" id="kuld">Küldetésünk:</h1>
+                            <p>A Balaton-felvidéki MBK célja, hogy összekösse a motorozás szerelmeseit, és közös
+                                élményeket nyújtson számukra. </p>
+                            <p>Nyílt és meghívásos alapú motoros túrákat szervezünk, ahol mindenkit szívesen látunk, aki
+                                osztozik a szenvedélyünkben. Időnként nagyobb csapatokhoz is csatlakozunk, hogy még több
+                                motorossal oszthassuk meg az utazás örömét.</p>
+
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <h1 class="mbk" id="tag">Események amiken ott voltunk:</h1>
+                    <p>
+                    <ul>
+                        <li>Balaton-Felvidéki Motoros Fesztivál</li>
+                        <li>Tavaszi Túra a Bakonyban</li>
+                        <li>Nemzetközi Motoros Találkozó</li>
+
+                    </ul>
+                    </p>
+
                 </div>
-                <br>
-                <br>
-                <h1 class="mbk" id="tag">Események amiken ott voltunk:</h1>
-                <p><ul><li>Balaton-Felvidéki Motoros Fesztivál</li>
-                <li>Tavaszi Túra a Bakonyban</li>
-                <li>Nemzetközi Motoros Találkozó</li>
-                
-                </ul></p>
-                
             </div>
         </div>
     </div>
-</div>
 
-<footer>
-    <p style="margin: 0%;">Kapcsolat: <a style="text-decoration: none" href="mailto:info@balatonmbk.hu"><span id="mbk">info@balatonmbk.hu</span></a> / <a style="color: #ff4500; text-decoration: none;" href="/WebPages/Üzenet.html">Üzenet</a> | Kövess minket a <a style="color: #ff4500; text-decoration: none;" href="https://www.facebook.com/motorozzvelem">közösségi médiában</a>!</p>
-</footer>
+    <footer>
+        <p style="margin: 0%;">Kapcsolat: <a style="text-decoration: none" href="mailto:info@balatonmbk.hu"><span
+                    id="mbk">info@balatonmbk.hu</span></a> / <a style="color: #ff4500; text-decoration: none;"
+                href="../WebPages/Üzenet.html">Üzenet</a> | Kövess minket a <a
+                style="color: #ff4500; text-decoration: none;" href="https://www.facebook.com/motorozzvelem">közösségi
+                médiában</a>!</p>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>

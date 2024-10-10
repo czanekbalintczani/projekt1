@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Motorok</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/Motorok.css">
+    <link rel="shortcut icon" href="../Images/logouj.ico" type="image/x-icon">
+
 </head>
 <style>
     body {
@@ -15,29 +18,40 @@
         margin: 0;
         padding: 0;
     }
+
     header {
         background-color: #1f1f1f;
         padding: 20px;
         text-align: center;
     }
+
     header img {
         max-width: 150px;
     }
-    nav {
+
+    .nav {
         display: flex;
         justify-content: center;
         background-color: #333;
         padding: 10px;
         font-size: 18pt;
+        text-align: center;
     }
-    nav a {
+
+    .nav a {
         color: #ffffff;
         text-decoration: none;
         margin: 0 15px;
     }
-    nav a:hover{
+
+    .nav a:hover {
         color: #ff4500
     }
+
+    .nav-active {
+        color: #ff4500;
+    }
+
     .hero {
         background: url('https://example.com/hero-image.jpg') no-repeat center center/cover;
         height: 400px;
@@ -46,35 +60,44 @@
         align-items: center;
         text-align: center;
     }
+
     .hero h1 {
         font-size: 3em;
         color: #ffffff;
     }
+
     .content {
         padding: 20px;
     }
+
     .section {
         margin-bottom: 40px;
     }
+
     .section h2 {
         color: #ff4500;
     }
+
     .gallery img {
         width: 100%;
         height: auto;
     }
+
     .slideshow-container {
         position: relative;
         max-width: 1000px;
         margin: auto;
     }
+
     .slides {
         display: none;
         transition: opacity 1.5s ease-in-out;
     }
+
     .slides img {
         width: 100%;
     }
+
     .text {
         color: #ffffff;
         font-size: 1.2em;
@@ -84,7 +107,9 @@
         width: 100%;
         text-align: center;
     }
-    .prev, .next {
+
+    .prev,
+    .next {
         cursor: pointer;
         position: absolute;
         top: 50%;
@@ -98,22 +123,28 @@
         border-radius: 0 3px 3px 0;
         user-select: none;
     }
+
     .next {
         right: 0;
         border-radius: 3px 0 0 3px;
     }
-    .prev:hover, .next:hover {
-        background-color: rgba(0,0,0,0.8);
+
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
     }
+
     footer {
         background-color: #1f1f1f;
         text-align: center;
         padding: 20px;
     }
-    #mbk{
+
+    #mbk {
         color: #ff4500
     }
-    button{
+
+    button {
         text-align: center;
         color: white;
         background-color: #ff4500;
@@ -122,218 +153,266 @@
         font-weight: bold;
         border-radius: 8px;
     }
-    .a2{
+
+    .a2 {
         color: #ff4500;
     }
 
-    .kozepre{
+    .kozepre {
         text-align: center;
     }
-    .border-motor{
+
+    .border-motor {
         border: 2px solid #ff4500;
         width: 400px;
         height: 550px;
         border-radius: 25px;
     }
-    .motortipus{
-        font-size:18pt;
+
+    .motortipus {
+        font-size: 18pt;
     }
-    .koztes{height: 10px;}
+
+    .koztes {
+        height: 10px;
+    }
 </style>
+
 <body>
     <header>
-        <a href="../WebPages/teszt.html"><img src="/Images/logouj.png" alt="Balaton felvidéki mbk Logo"></a>
+        <a href="../WebPages/teszt.html"><img src="../Images/logouj.png" alt="Balaton felvidéki mbk Logo"></a>
     </header>
-    <nav>
-        <a href="/WebPages/Motorok.html">Motorok</a>
-        <a href="/WebPages/Üzenet.html">Üzenet</a>
-        <a href="/WebPages/Galéria.html">Galéria</a>
-        <a href="/WebPages/Történet.html">Történet</a>
-    </nav>
+    <div class="row">
+        <div class="nav">
+            <div class="col-lg-3"><a href="../WebPages/Motorok.html"><span class="nav-active">Motorok</span></a></div>
+            <div class="col-lg-3"><a href="../WebPages/Üzenet.html">Üzenet</a></div>
+            <div class="col-lg-3"><a href="../WebPages/Galéria.html">Galéria</a></div>
+            <div class="col-lg-3"><a href="../WebPages/Történet.html">Történet</a></div>
+        </div>
+    </div>
     <!-- ROW KEZD -->
-<div class="row koztes"><div class="koztes"></div></div>
-<div class="row">  
-    <div class="col-lg-1"></div>
-    <div class="col-lg-3 kozepre border-motor">
-        <img class="img2" src="../Images/fb_r-removebg-preview.png" alt="Hiba.">
-        <br>
-        <br>
-        <br>
-        <p class="motortipus">Motor Gyártmánya: Honda</p>
-        <p class="motortipus">Motor Típusa: GL1800 Gold Wing Tour</p>
-        <br>
-        <br>
-        <br>
-        <a class="a2" target="_blank" href="https://www.honda.hu/motorcycles/range/touring/gl1800-gold-wing-tour/overview.html"><button type="button">További infó a motorról</button></a>
+    <div class="row koztes">
+        <div class="koztes"></div>
     </div>
-    <!-- Erre itt figyelni! -->
-    <div class="col-lg-1"></div>
-    <div class="col-lg-3 kozepre border-motor">
-        <img class="img2" src="../Images/honda-nt1100.png" alt="Hiba.">
-        <br>
-        <br>
-        <br>
-        <p class="motortipus">Motor Gyártmánya: Honda</p>
-        <p class="motortipus">Motor Típusa: NT1100</p>
-        <br>
-        <br>
-        <br>
-        <a class="a2" target="_blank" href="https://www.honda.hu/motorcycles/range/touring/nt1100/overview.html"><button type="button">További infó a motorról</button></a>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-3 kozepre border-motor">
+            <img class="img2" src="../Images/fb_r-removebg-preview.png" alt="Hiba.">
+            <br>
+            <br>
+            <br>
+            <p class="motortipus">Motor Gyártmánya: Honda</p>
+            <p class="motortipus">Motor Típusa: GL1800 Gold Wing Tour</p>
+            <br>
+            <br>
+            <br>
+            <a class="a2" target="_blank"
+                href="https://www.honda.hu/motorcycles/range/touring/gl1800-gold-wing-tour/overview.html"><button
+                    type="button">További infó a motorról</button></a>
+        </div>
+        <!-- Erre itt figyelni! -->
+        <div class="col-lg-1"></div>
+        <div class="col-lg-3 kozepre border-motor">
+            <img class="img2" src="../Images/honda-nt1100.png" alt="Hiba.">
+            <br>
+            <br>
+            <br>
+            <p class="motortipus">Motor Gyártmánya: Honda</p>
+            <p class="motortipus">Motor Típusa: NT1100</p>
+            <br>
+            <br>
+            <br>
+            <a class="a2" target="_blank"
+                href="https://www.honda.hu/motorcycles/range/touring/nt1100/overview.html"><button type="button">További
+                    infó a motorról</button></a>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-3 kozepre border-motor">
+            <img class="img2" src="../Images/honda GT 1800 Gold Wing.png" alt="Hiba.">
+            <br>
+            <br>
+            <br>
+            <p class="motortipus">Motor Gyártmánya: Honda</p>
+            <p class="motortipus">Motor Típusa: GT 1800 Gold Wing</p>
+            <br>
+            <br>
+            <br>
+            <a class="a2" target="_blank"
+                href="https://www.honda.hu/motorcycles/range/touring/gl1800-gold-wing/overview.html"><button
+                    type="button">További infó a motorról</button></a>
+        </div>
     </div>
-    <div class="col-lg-1"></div>
-    <div class="col-lg-3 kozepre border-motor">
-        <img class="img2" src="../Images/honda GT 1800 Gold Wing.png" alt="Hiba.">
-        <br>
-        <br>
-        <br>
-        <p class="motortipus">Motor Gyártmánya: Honda</p>
-        <p class="motortipus">Motor Típusa: GT 1800 Gold Wing</p>
-        <br>
-        <br>
-        <br>
-        <a class="a2" target="_blank" href="https://www.honda.hu/motorcycles/range/touring/gl1800-gold-wing/overview.html"><button type="button">További infó a motorról</button></a>
+    <!-- ROW VÉGE -->
+    <div class="row koztes">
+        <div class="koztes"></div>
     </div>
-</div>
-<!-- ROW VÉGE -->
-<div class="row koztes"><div class="koztes"></div></div>
-<!-- KÖZTES -->
-<div class="row">
-    <div class="col-lg-1"></div>
-    <div class="col-lg-3 kozepre border-motor">
-        <img class="img2" src="../Images/crf1100l_africa_twin_adventure_sports.png" alt="Hiba.">
-        <br>
-        <br>
-        <br>
-        <p class="motortipus">Motor Gyártmánya: Honda</p>
-        <p class="motortipus">Motor Típusa: CRF1100L Africa Twin Adventure Sports</p>
-        <br>
-        <br>
-        <br>
-        <a class="a2" target="_blank" href="https://www.honda.hu/motorcycles/range/adventure/crf1100l-africa-twin-adventure-sports/overview.html"><button type="button">További infó a motorról</button></a>
+    <!-- KÖZTES -->
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-3 kozepre border-motor">
+            <img class="img2" src="../Images/crf1100l_africa_twin_adventure_sports.png" alt="Hiba.">
+            <br>
+            <br>
+            <br>
+            <p class="motortipus">Motor Gyártmánya: Honda</p>
+            <p class="motortipus">Motor Típusa: CRF1100L Africa Twin Adventure Sports</p>
+            <br>
+            <br>
+            <br>
+            <a class="a2" target="_blank"
+                href="https://www.honda.hu/motorcycles/range/adventure/crf1100l-africa-twin-adventure-sports/overview.html"><button
+                    type="button">További infó a motorról</button></a>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-3 kozepre border-motor">
+            <img class="img2" src="../Images/crf1100l_africa_twin.png" alt="Hiba.">
+            <br>
+            <br>
+            <br>
+            <p class="motortipus">Motor Gyártmánya: Honda</p>
+            <p class="motortipus">Motor Típusa: CRF1100l Africa Twin</p>
+            <br>
+            <br>
+            <br>
+            <a class="a2" target="_blank"
+                href="https://www.honda.hu/motorcycles/range/adventure/crf1100l-africa-twin/overview.html"><button
+                    type="button">További infó a motorról</button></a>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-3 kozepre border-motor">
+            <img class="img2" src="../Images/honda-xl-750-transalp.png" alt="Hiba.">
+            <br>
+            <br>
+            <br>
+            <p class="motortipus">Motor Gyártmánya: Honda</p>
+            <p class="motortipus">Motor Típusa: XL 750 Translp</p>
+            <br>
+            <br>
+            <br>
+            <a class="a2" target="_blank"
+                href="https://www.honda.hu/motorcycles/range/adventure/xl750_transalp/overview.html"><button
+                    type="button">További infó a motorról</button></a>
+        </div>
     </div>
-<div class="col-lg-1"></div>
-<div class="col-lg-3 kozepre border-motor">
-    <img class="img2" src="../Images/crf1100l_africa_twin.png" alt="Hiba.">
-    <br>
-    <br>
-    <br>
-    <p class="motortipus">Motor Gyártmánya: Honda</p>
-    <p class="motortipus">Motor Típusa: CRF1100l Africa Twin</p>
-    <br>
-    <br>
-    <br>
-    <a class="a2" target="_blank" href="https://www.honda.hu/motorcycles/range/adventure/crf1100l-africa-twin/overview.html"><button type="button">További infó a motorról</button></a>
-</div>
-<div class="col-lg-1"></div>
-    <div class="col-lg-3 kozepre border-motor">
-        <img class="img2" src="../Images/honda-xl-750-transalp.png" alt="Hiba.">
-        <br>
-        <br>
-        <br>
-        <p class="motortipus">Motor Gyártmánya: Honda</p>
-        <p class="motortipus">Motor Típusa: XL 750 Translp</p>
-        <br>
-        <br>
-        <br>
-        <a class="a2" target="_blank" href="https://www.honda.hu/motorcycles/range/adventure/xl750_transalp/overview.html"><button type="button">További infó a motorról</button></a>
     </div>
-</div>
-</div>
-<!-- VÉGE -->
-<div class="row koztes"><div class="koztes"></div></div>
-<div class="row">
-    <div class="col-lg-1"></div>
-    <div class="col-lg-3 kozepre border-motor">
-        <img class="img2" src="../Images/HONDA-X-ADV.png" alt="Hiba.">
-        <br>
-        <br>
-        <br>
-        <p class="motortipus">Motor Gyártmánya: Honda</p>
-        <p class="motortipus">Motor Típusa: X ADV</p>
-        <br>
-        <br>
-        <br>
-        <a class="a2" target="_blank" href="https://www.honda.hu/motorcycles/range/adventure/x-adv/overview.html"><button type="button">További infó a motorról</button></a>
+    <!-- VÉGE -->
+    <div class="row koztes">
+        <div class="koztes"></div>
     </div>
-    <div class="col-lg-1"></div>
-    <div class="col-lg-3 kozepre border-motor">
-        <img class="img2" src="../Images/nc750x.png" alt="Hiba.">
-        <br>
-        <br>
-        <br>
-        <p class="motortipus">Motor Gyártmánya: Honda</p>
-        <p class="motortipus">Motor Típusa: NC750X</p>
-        <br>
-        <br>
-        <br>
-        <a class="a2" target="_blank" href="https://www.honda.hu/motorcycles/range/adventure/nc750x/overview.html"><button type="button">További infó a motorról</button></a>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-3 kozepre border-motor">
+            <img class="img2" src="../Images/HONDA-X-ADV.png" alt="Hiba.">
+            <br>
+            <br>
+            <br>
+            <p class="motortipus">Motor Gyártmánya: Honda</p>
+            <p class="motortipus">Motor Típusa: X ADV</p>
+            <br>
+            <br>
+            <br>
+            <a class="a2" target="_blank"
+                href="https://www.honda.hu/motorcycles/range/adventure/x-adv/overview.html"><button
+                    type="button">További infó a motorról</button></a>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-3 kozepre border-motor">
+            <img class="img2" src="../Images/nc750x.png" alt="Hiba.">
+            <br>
+            <br>
+            <br>
+            <p class="motortipus">Motor Gyártmánya: Honda</p>
+            <p class="motortipus">Motor Típusa: NC750X</p>
+            <br>
+            <br>
+            <br>
+            <a class="a2" target="_blank"
+                href="https://www.honda.hu/motorcycles/range/adventure/nc750x/overview.html"><button
+                    type="button">További infó a motorról</button></a>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-3 kozepre border-motor">
+            <img class="img2" src="../Images/Honda_NX_500.png" alt="Hiba.">
+            <br>
+            <br>
+            <br>
+            <p class="motortipus">Motor Gyártmánya: Honda</p>
+            <p class="motortipus">Motor Típusa: NX 500</p>
+            <br>
+            <br>
+            <br>
+            <a class="a2" target="_blank"
+                href="https://www.honda.hu/motorcycles/range/adventure/nx500/overview.html"><button
+                    type="button">További infó a motorról</button></a>
+        </div>
     </div>
-    <div class="col-lg-1"></div>
-    <div class="col-lg-3 kozepre border-motor">
-        <img class="img2" src="../Images/Honda_NX_500.png" alt="Hiba.">
-        <br>
-        <br>
-        <br>
-        <p class="motortipus">Motor Gyártmánya: Honda</p>
-        <p class="motortipus">Motor Típusa: NX 500</p>
-        <br>
-        <br>
-        <br>
-        <a class="a2" target="_blank" href="https://www.honda.hu/motorcycles/range/adventure/nx500/overview.html"><button type="button">További infó a motorról</button></a>
+    <!-- VÉGE -->
+    <div class="row koztes">
+        <div class="koztes"></div>
     </div>
-</div>
-<!-- VÉGE -->
-<div class="row koztes"><div class="koztes"></div></div>
-<div class="row">
-    <div class="col-lg-1"></div>
-    <div class="col-lg-3 kozepre border-motor">
-        <img class="img2" src="../Images/crf300L.png" alt="Hiba.">
-        <br>
-        <br>
-        <br>
-        <p class="motortipus">Motor Gyártmánya: Honda</p>
-        <p class="motortipus">Motor Típusa: CRF300L</p>
-        <br>
-        <br>
-        <br>
-        <a class="a2" target="_blank" href="https://www.honda.hu/motorcycles/range/adventure/crf300l/overview.html"><button type="button">További infó a motorról</button></a>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-3 kozepre border-motor">
+            <img class="img2" src="../Images/crf300L.png" alt="Hiba.">
+            <br>
+            <br>
+            <br>
+            <p class="motortipus">Motor Gyártmánya: Honda</p>
+            <p class="motortipus">Motor Típusa: CRF300L</p>
+            <br>
+            <br>
+            <br>
+            <a class="a2" target="_blank"
+                href="https://www.honda.hu/motorcycles/range/adventure/crf300l/overview.html"><button
+                    type="button">További infó a motorról</button></a>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-3 kozepre border-motor">
+            <img class="img2" src="../Images/crf300_rally.png" alt="Hiba.">
+            <br>
+            <br>
+            <br>
+            <p class="motortipus">Motor Gyártmánya: Honda</p>
+            <p class="motortipus">Motor Típusa: CRF300L Rally</p>
+            <br>
+            <br>
+            <br>
+            <a class="a2" target="_blank"
+                href="https://www.honda.hu/motorcycles/range/adventure/crf300-rally/overview.html"><button
+                    type="button">További infó a motorról</button></a>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-3 kozepre border-motor">
+            <img class="img2" src="../Images/rk-v125c-menu.png" alt="Hiba.">
+            <br>
+            <br>
+            <br>
+            <p class="motortipus">Motor Gyártmánya: Honda</p>
+            <p class="motortipus">Motor Típusa: RK V125C</p>
+            <br>
+            <br>
+            <br>
+            <a class="a2" target="_blank"
+                href="https://www.honda.hu/motorcycles/range/touring/gl1800-gold-wing/overview.html"><button
+                    type="button">További infó a motorról</button></a>
+        </div>
     </div>
-    <div class="col-lg-1"></div>
-    <div class="col-lg-3 kozepre border-motor">
-        <img class="img2" src="../Images/crf300_rally.png" alt="Hiba.">
-        <br>
-        <br>
-        <br>
-        <p class="motortipus">Motor Gyártmánya: Honda</p>
-        <p class="motortipus">Motor Típusa: CRF300L Rally</p>
-        <br>
-        <br>
-        <br>
-        <a class="a2" target="_blank" href="https://www.honda.hu/motorcycles/range/adventure/crf300-rally/overview.html"><button type="button">További infó a motorról</button></a>
+    <!-- VÉGE -->
+    <div class="row koztes">
+        <div class="koztes"></div>
     </div>
-    <div class="col-lg-1"></div>
-    <div class="col-lg-3 kozepre border-motor">
-        <img class="img2" src="../Images/rk-v125c-menu.png" alt="Hiba.">
-        <br>
-        <br>
-        <br>
-        <p class="motortipus">Motor Gyártmánya: Honda</p>
-        <p class="motortipus">Motor Típusa: RK V125C</p>
-        <br>
-        <br>
-        <br>
-        <a class="a2" target="_blank" href="https://www.honda.hu/motorcycles/range/touring/gl1800-gold-wing/overview.html"><button type="button">További infó a motorról</button></a>
-    </div>
-</div>
-<!-- VÉGE -->
-<div class="row koztes"><div class="koztes"></div></div>
 
 
-<footer>
-    <p style="margin: 0%;">Kapcsolat: <a style="text-decoration: none" href="mailto:info@balatonmbk.hu"><span id="mbk">info@balatonmbk.hu</span></a> / <a style="color: #ff4500; text-decoration: none;" href="/WebPages/Üzenet.html">Üzenet</a> | Kövess minket a <a style="color: #ff4500; text-decoration: none;" href="https://www.facebook.com/motorozzvelem">közösségi médiában</a>!</p>
-</footer>
+    <footer>
+        <p style="margin: 0%;">Kapcsolat: <a style="text-decoration: none" href="mailto:info@balatonmbk.hu"><span
+                    id="mbk">info@balatonmbk.hu</span></a> / <a style="color: #ff4500; text-decoration: none;"
+                href="../WebPages/Üzenet.html">Üzenet</a> | Kövess minket a <a
+                style="color: #ff4500; text-decoration: none;" href="https://www.facebook.com/motorozzvelem">közösségi
+                médiában</a>!</p>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>

@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Balaton felvidéki mbk</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../Images/logouj.ico" type="image/x-icon">
+    <title>Balaton felvidéki MBK</title>
     <style>
         body {
             background-color: #121212;
@@ -13,29 +16,40 @@
             padding: 0;
             font-size: 18pt;
         }
+
         header {
             background-color: #1f1f1f;
             padding: 20px;
             text-align: center;
         }
+
         header img {
             max-width: 150px;
         }
-        nav {
+
+        .nav {
             display: flex;
             justify-content: center;
             background-color: #333;
             padding: 10px;
             font-size: 18pt;
+            text-align: center;
         }
-        nav a {
+
+        .nav a {
             color: #ffffff;
             text-decoration: none;
             margin: 0 15px;
         }
-        nav a:hover{
+
+        .nav a:hover {
             color: #ff4500
         }
+
+        .nav-active {
+            color: #ff4500;
+        }
+
         .hero {
             background: url('https://example.com/hero-image.jpg') no-repeat center center/cover;
             height: 400px;
@@ -44,35 +58,44 @@
             align-items: center;
             text-align: center;
         }
+
         .hero h1 {
             font-size: 3em;
             color: #ffffff;
         }
+
         .content {
             padding: 20px;
         }
+
         .section {
             margin-bottom: 40px;
         }
+
         .section h2 {
             color: #ff4500;
         }
+
         .gallery img {
             width: 100%;
             height: auto;
         }
+
         .slideshow-container {
             position: relative;
             max-width: 1000px;
             margin: auto;
         }
+
         .slides {
             display: none;
             transition: opacity 1.5s ease-in-out;
         }
+
         .slides img {
             width: 100%;
         }
+
         .text {
             color: #ff4500;
             background-color: #121212;
@@ -84,7 +107,9 @@
             text-align: center;
             font-weight: bold;
         }
-        .prev, .next {
+
+        .prev,
+        .next {
             cursor: pointer;
             position: absolute;
             top: 50%;
@@ -98,22 +123,28 @@
             border-radius: 0 3px 3px 0;
             user-select: none;
         }
+
         .next {
             right: 0;
             border-radius: 3px 0 0 3px;
         }
-        .prev:hover, .next:hover {
-            background-color: rgba(0,0,0,0.8);
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
         }
+
         footer {
             background-color: #1f1f1f;
             text-align: center;
             padding: 20px;
         }
-        #mbk{
+
+        #mbk {
             color: #ff4500
         }
-        button{
+
+        button {
             text-align: center;
             color: white;
             background-color: #ff4500;
@@ -122,58 +153,75 @@
             font-weight: bold;
             border-radius: 7px;
         }
-        .szoveg{
+
+        .szoveg {
             font-size: 25pt;
         }
-        #meretuj{font-size: 45pt;}
+
+        #meretuj {
+            font-size: 45pt;
+        }
     </style>
 </head>
+
 <body>
     <header>
-        <a href="/WebPages/teszt.html"><img src="/Images/logouj.png" alt="Balaton felvidéki mbk Logo"></a>
+        <a href="../WebPages/teszt.html"><img src="../Images/logouj.png" alt="Balaton felvidéki mbk Logo"></a>
     </header>
-    <nav>
-        <a href="/WebPages/Motorok.html">Motorok</a>
-        <a href="/WebPages/Üzenet.html">Üzenet</a>
-        <a href="/WebPages/Galéria.html">Galéria</a>
-        <a href="/WebPages/Történet.html">Történet</a>
-    </nav>
+    <div class="row">
+        <div class="nav">
+            <div class="col-lg-3"><a href="../WebPages/Motorok.html">Motorok</a></div>
+            <div class="col-lg-3"><a href="../WebPages/Üzenet.html">Üzenet</a></div>
+            <div class="col-lg-3"><a href="../WebPages/Galéria.html">Galéria</a></div>
+            <div class="col-lg-3"><a href="../WebPages/Történet.html">Történet</a></div>
+        </div>
+    </div>
     <div class="hero">
         <h2 id="meretuj">Üdvözlünk a <span id="mbk">Balaton-Felvidéki Motoros Baráti Kör</span> oldalán!</h2>
     </div>
     <div class="content">
         <div class="section" id="motorosok">
-            <p class="szoveg">Ismerd meg klubtagjainkat és történeteiket. Mindenki egyedi, de a motorozás iránti szenvedélyünk közös.</p>
-            <h2><a href="/WebPages/Történet.html"><button type="button">Történet</button></a></h2>
+            <p class="szoveg">Ismerd meg klubtagjainkat és történeteiket. Mindenki egyedi, de a motorozás iránti
+                szenvedélyünk közös.</p>
+            <h2><a href="../WebPages/Történet.html"><button type="button">Történet</button></a></h2>
         </div>
         <div class="section" id="muhely">
-            <p class="szoveg">Ha szeretnél <span id="mbk">csapatunkhoz</span> tartozni, ne habozz, a gombra kattintva írhatsz nekünk!</p>
-            <h2><a href="/WebPages/Üzenet.html"><button type="button">Írj nekünk!</button></a></h2>
+            <p class="szoveg">Ha szeretnél <span id="mbk">csapatunkhoz</span> tartozni, ne habozz, a gombra kattintva
+                írhatsz nekünk!</p>
+            <h2><a href="../WebPages/Üzenet.html"><button type="button">Írj nekünk!</button></a></h2>
         </div>
         <div class="section gallery" id="galeria">
-            <p class="szoveg">Érdekel mi történik velünk egy-egy gurulgatás alkalmával? Esetleg ott voltál és szeretnéd újra átélni a pillanatot? Folyamatosan frissülő képgalériánkkal megteheted!</p>
-            <h2><a href="/WebPages/Galéria.html" ><button type="button">Galéria</button></a></h2>
+            <p class="szoveg">Érdekel mi történik velünk egy-egy gurulgatás alkalmával? Esetleg ott voltál és szeretnéd
+                újra átélni a pillanatot? Folyamatosan frissülő képgalériánkkal megteheted!</p>
+            <h2><a href="../WebPages/Galéria.html"><button type="button">Galéria</button></a></h2>
         </div>
         <div class="section" id="motorok"></div>
         <p class="szoveg">Érdekel, hogy a <span id="mbk">csapatunk</span> mivel rója az utakat? Lesd meg!</p>
-        <h2><a href="/WebPages/Motorok.html"><button type="button">Motorjaink</button></a></h2>
-        </div>
+        <h2><a href="../WebPages/Motorok.html"><button type="button">Motorjaink</button></a></h2>
+    </div>
     </div>
     <div class="slideshow-container">
         <div class="slides">
-            <img src="/Images/mbmotorosfeszt.jpg" height="500" width="1000" alt="Slideshow Image 1">        
-            <div class="text">Egy rövid feltöltődés hétvégén!</div></div>
-        <div class="slides">
-            <img src="/Images/gyerekamotoron.jpg" height="500" width="1000" alt="Slideshow Image 1">            <div class="text">Az első motoros fesztiválon készült kép</div>
+            <img src="../Images/mbmotorosfeszt.jpg" height="500" width="1000" alt="Slideshow Image 1">
+            <div class="text">Egy rövid feltöltődés hétvégén!</div>
         </div>
         <div class="slides">
-            <img src="/Images/ujtag.jpg" height="500" width="1000" alt="Slideshow Image 1">            <div class="text">Csabi csatlakozott hozzánk! Üdv a klubban!</div>
+            <img src="../Images/gyerekamotoron.jpg" height="500" width="1000" alt="Slideshow Image 1">
+            <div class="text">Az első motoros fesztiválon készült kép</div>
+        </div>
+        <div class="slides">
+            <img src="../Images/ujtag.jpg" height="500" width="1000" alt="Slideshow Image 1">
+            <div class="text">Csabi csatlakozott hozzánk! Üdv a klubban!</div>
         </div>
         <a class="prev" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)">❯</a>
     </div>
     <footer>
-        <p style="margin: 0%;">Kapcsolat: <a style="text-decoration: none" href="mailto:info@balatonmbk.hu"><span id="mbk">info@balatonmbk.hu</span></a> / <a style="color: #ff4500; text-decoration: none;" href="/WebPages/Üzenet.html">Üzenet</a> | Kövess minket a <a style="color: #ff4500; text-decoration: none;" href="https://www.facebook.com/motorozzvelem">közösségi médiában</a>!</p>
+        <p style="margin: 0%;">Kapcsolat: <a style="text-decoration: none" href="mailto:info@balatonmbk.hu"><span
+                    id="mbk">info@balatonmbk.hu</span></a> / <a style="color: #ff4500; text-decoration: none;"
+                href="../WebPages/Üzenet.html">Üzenet</a> | Kövess minket a <a
+                style="color: #ff4500; text-decoration: none;" href="https://www.facebook.com/motorozzvelem">közösségi
+                médiában</a>!</p>
     </footer>
     <script>
         let slideIndex = 0;
@@ -185,8 +233,8 @@
                 slides[i].style.display = "none";
             }
             slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}
-            slides[slideIndex-1].style.display = "block";
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
             setTimeout(showSlides, 4000); // Change image every 4 seconds
         }
 
@@ -194,6 +242,7 @@
             showSlides(slideIndex += n);
         }
     </script>
-    
+
 </body>
+
 </html>
